@@ -40,6 +40,7 @@ public class NewJFrame1 extends javax.swing.JFrame {
         lbl3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jButton1.setText("jButton1");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
@@ -47,79 +48,30 @@ public class NewJFrame1 extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 206, -1, -1));
+        getContentPane().add(txtnum1, new org.netbeans.lib.awtextra.AbsoluteConstraints(102, 30, 123, -1));
+        getContentPane().add(txtnum2, new org.netbeans.lib.awtextra.AbsoluteConstraints(102, 77, 123, -1));
 
         jLabel1.setText("num1");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(58, 32, -1, -1));
 
         jLabel2.setText("num2");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(58, 79, -1, -1));
 
         jButton2.setText("ADD");
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 102, -1, -1));
 
         lbltotal.setText("total");
+        getContentPane().add(lbltotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(58, 121, -1, -1));
 
         lbl2.setText("total2");
+        getContentPane().add(lbl2, new org.netbeans.lib.awtextra.AbsoluteConstraints(58, 148, -1, -1));
 
         lbl4.setText("total4");
+        getContentPane().add(lbl4, new org.netbeans.lib.awtextra.AbsoluteConstraints(58, 196, -1, -1));
 
         lbl3.setText("total3");
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(58, 58, 58)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lbl3)
-                    .addComponent(lbl2)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(lbltotal)
-                        .addGap(52, 52, 52)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton2)
-                            .addComponent(jButton1)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel2)
-                            .addComponent(jLabel1))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(txtnum2, javax.swing.GroupLayout.DEFAULT_SIZE, 123, Short.MAX_VALUE)
-                            .addComponent(txtnum1)))
-                    .addComponent(lbl4))
-                .addContainerGap(175, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(30, 30, 30)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtnum1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel1))
-                .addGap(28, 28, 28)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel2)
-                    .addComponent(txtnum2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton2))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(25, 25, 25)
-                        .addComponent(lbltotal)))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 70, Short.MAX_VALUE)
-                        .addComponent(jButton1)
-                        .addGap(69, 69, 69))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(12, 12, 12)
-                        .addComponent(lbl2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(lbl3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(lbl4)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-        );
+        getContentPane().add(lbl3, new org.netbeans.lib.awtextra.AbsoluteConstraints(58, 169, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -137,6 +89,10 @@ public class NewJFrame1 extends javax.swing.JFrame {
        lbl3.setText("The prod is;" +prod);
        lbl4.setText("The quot is;" +quot);
        
+       JOptionPane.showMessageDialog(null, "The total of the sum is: " + sum, "ACT2D", JOptionPane.INFORMATION_MESSAGE);
+       JOptionPane.showMessageDialog(null, "The total of the diff is: " + diff, "ACT2D", JOptionPane.WARNING_MESSAGE);
+       JOptionPane.showMessageDialog(null, "The total of the prod is: " + prod, "ACT2D", JOptionPane.ERROR_MESSAGE);
+       JOptionPane.showMessageDialog(null, "The total of the quot is: " + quot, "ACT2D", JOptionPane.INFORMATION_MESSAGE);
       
      
       
