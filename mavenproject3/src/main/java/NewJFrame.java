@@ -59,15 +59,20 @@ public class NewJFrame extends javax.swing.JFrame {
         jRadioButton7 = new javax.swing.JRadioButton();
         jButton1 = new javax.swing.JButton();
         jTextField12 = new javax.swing.JTextField();
+        jLabel11 = new javax.swing.JLabel();
+        jTextField13 = new javax.swing.JTextField();
+        jTextField14 = new javax.swing.JTextField();
+        jTextField15 = new javax.swing.JTextField();
+        jLabel16 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel1.setText("Student Registration Form");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(247, 21, -1, -1));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 10, -1, -1));
 
         jLabel2.setText("Student name;");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 56, -1, -1));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 70, -1, -1));
 
         jLabel3.setText("Fathers name;");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 105, -1, -1));
@@ -100,24 +105,34 @@ public class NewJFrame extends javax.swing.JFrame {
         getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(34, 397, -1, -1));
 
         jLabel14.setText("City:");
-        getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(49, 471, -1, -1));
+        getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 430, -1, -1));
 
         jLabel15.setText("Addres");
-        getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(34, 512, -1, -1));
-        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(127, 54, 264, -1));
-        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(127, 103, 101, -1));
-        getContentPane().add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(255, 103, 136, -1));
-        getContentPane().add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(127, 134, 264, -1));
+        getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 470, -1, -1));
+        getContentPane().add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 40, 264, -1));
+
+        jTextField2.setText("First Name");
+        getContentPane().add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 70, 101, -1));
+
+        jTextField3.setText("Last Name ");
+        getContentPane().add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 70, 136, -1));
+
+        jTextField4.setText("Day");
+        getContentPane().add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 130, 60, -1));
+
+        jTextField5.setText("+91");
         getContentPane().add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(126, 171, 47, -1));
         getContentPane().add(jTextField6, new org.netbeans.lib.awtextra.AbsoluteConstraints(191, 171, 200, -1));
-        getContentPane().add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(117, 208, 245, -1));
-        getContentPane().add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(117, 245, 206, -1));
+
+        jTextField7.setText("Email");
+        getContentPane().add(jTextField7, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 210, 270, -1));
+        getContentPane().add(jTextField8, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 240, 270, -1));
 
         jRadioButton1.setText("Male");
-        getContentPane().add(jRadioButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(117, 286, -1, -1));
+        getContentPane().add(jRadioButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 290, -1, -1));
 
         jRadioButton2.setText("Female");
-        getContentPane().add(jRadioButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(203, 286, -1, -1));
+        getContentPane().add(jRadioButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 290, -1, -1));
 
         jRadioButton3.setText("CSE");
         getContentPane().add(jRadioButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(125, 327, -1, -1));
@@ -127,9 +142,11 @@ public class NewJFrame extends javax.swing.JFrame {
 
         jRadioButton5.setText("BCE");
         getContentPane().add(jRadioButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 327, -1, -1));
-        getContentPane().add(jTextField9, new org.netbeans.lib.awtextra.AbsoluteConstraints(128, 356, 245, -1));
-        getContentPane().add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(128, 510, 245, -1));
-        getContentPane().add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(128, 469, 211, -1));
+
+        jTextField9.setText("Course");
+        getContentPane().add(jTextField9, new org.netbeans.lib.awtextra.AbsoluteConstraints(128, 356, 260, -1));
+        getContentPane().add(jTextField10, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 470, 245, 60));
+        getContentPane().add(jTextField11, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 430, 260, -1));
 
         jRadioButton6.setText("CIVIL");
         getContentPane().add(jRadioButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(313, 327, -1, -1));
@@ -138,8 +155,25 @@ public class NewJFrame extends javax.swing.JFrame {
         getContentPane().add(jRadioButton7, new org.netbeans.lib.awtextra.AbsoluteConstraints(363, 327, -1, -1));
 
         jButton1.setText("REGISTRATION");
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(181, 541, -1, -1));
-        getContentPane().add(jTextField12, new org.netbeans.lib.awtextra.AbsoluteConstraints(122, 395, 217, -1));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 550, -1, -1));
+
+        jTextField12.setText("Choose File");
+        getContentPane().add(jTextField12, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 390, 120, -1));
+
+        jLabel11.setText("Roll no:");
+        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 40, -1, -1));
+
+        jTextField13.setText("Father Name");
+        getContentPane().add(jTextField13, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 100, 250, -1));
+
+        jTextField14.setText("Month");
+        getContentPane().add(jTextField14, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 130, 70, -1));
+
+        jTextField15.setText("Year");
+        getContentPane().add(jTextField15, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 130, 80, -1));
+
+        jLabel16.setText("No File Chosen");
+        getContentPane().add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 390, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -183,10 +217,12 @@ public class NewJFrame extends javax.swing.JFrame {
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -206,6 +242,9 @@ public class NewJFrame extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField10;
     private javax.swing.JTextField jTextField11;
     private javax.swing.JTextField jTextField12;
+    private javax.swing.JTextField jTextField13;
+    private javax.swing.JTextField jTextField14;
+    private javax.swing.JTextField jTextField15;
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField3;
     private javax.swing.JTextField jTextField4;
